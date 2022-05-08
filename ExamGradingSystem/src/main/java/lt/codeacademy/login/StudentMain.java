@@ -14,15 +14,14 @@ public class StudentMain {
             main.callAction(action, scanner);
 
 
-        } while (!action.equals("4"));
+        } while (!action.equals("3"));
     }
 
     private void callAction(String action, Scanner scanner) {
         switch (action) {
             case "1" -> addStudent(scanner);
-          //  case "2" -> ;
-          //  case "3" -> ;
-            case "4" -> System.out.println("Viso gero");
+            case "2" -> addTest(scanner);
+            case "3" -> System.out.println("Viso gero");
             default -> System.out.println("Tokio veiksmo nera");
         }
     }
@@ -36,12 +35,17 @@ public class StudentMain {
         String surname = scanner.nextLine();
     }
 
+    private void addTest(Scanner scanner) {
+        System.out.println("Koki testa noresite laikyti? Iveskite testo pavadinima");
+    }
+
     private void studentMenu() {
         System.out.println("""
                 [1]. ivesti studento duomenis
                 [2]. laikyti testa
-                [3]. pasiziureti pazymius
+      //          [3]. testo klausimai
                 [4]. iseiti
                 """);
     }
 }
+

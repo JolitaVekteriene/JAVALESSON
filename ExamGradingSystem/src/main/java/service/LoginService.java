@@ -1,8 +1,5 @@
 package service;
 
-import org.apache.commons.codec.cli.Digest;
-import org.apache.commons.codec.digest.DigestUtils;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -17,16 +14,31 @@ public class LoginService {
         System.out.println("Iveskite slaptazodi:");
         String password = scanner.nextLine();
 
-        if (!isRepeatPasswordCorrect(scanner, password)){
-            System.out.println("Userio sukurti nepavyko");
+        if (!isRepeatPasswordCorrect(scanner, password)) {
+            System.out.println("Vartotojo sukurti nepavyko");
             return;
         }
 
-        credentials.put(userName, DigestUtils.sha512Hex(password));
+        credentials.put(userName, password);
+        System.out.println("Studento registracija sekminga");
     }
+    public void login(Scanner scanner) {
+        System.out.println("Iveskite vartotojo varda:");
+        String userName = scanner.nextLine();
+        System.out.println("Iveskite slaptazodi:");
+        String password = scanner.nextLine();
 
-    public void login() {
+        String userPassword = credentials.get(userName);
+        if (userPassword == null) {
+            System.out.println("Tokio vartotojo vardo nera");
+            return;
+        }
+        if (!userPassword.equals(password)) {
+            System.out.println("Neteisingas slaptazodis");
+            return;
+        }
 
+        System.out.printf("Sveikiname  %s prisijungus\n", userName);
     }
 
     private boolean isRepeatPasswordCorrect(Scanner scanner, String password) {
@@ -48,7 +60,7 @@ public class LoginService {
 
     private String getUniqueUserName(Scanner scanner) {
         while (true) {
-            System.out.println("Iveskite username:");
+            System.out.println("Iveskite vartotojo varda:");
             String newUserName = scanner.nextLine();
 
             String user = credentials.get(newUserName);
