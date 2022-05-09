@@ -22,6 +22,7 @@ public class LoginService {
         credentials.put(userName, password);
         System.out.println("Studento registracija sekminga");
     }
+
     public void login(Scanner scanner) {
         System.out.println("Iveskite vartotojo varda:");
         String userName = scanner.nextLine();

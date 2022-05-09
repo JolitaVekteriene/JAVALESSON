@@ -35,10 +35,42 @@ public class LecturerMain {
         String examQuestions = scanner.nextLine();
         System.out.println("Iveskite klausimo 1 atsakima: ");
         String examAnswers = scanner.nextLine();
-        System.out.println("Iveskite egzamino klausima: ");
+        System.out.println("Iveskite egzamino 2 klausima: ");
         String examQuestions1 = scanner.nextLine();
-        System.out.println("Iveskite klausimo 1 atsakima: ");
+        System.out.println("Iveskite klausimo 2 atsakima: ");
         String examAnswers2 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 3 klausima: ");
+        String examQuestions3 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 3 atsakima: ");
+        String examAnswers3 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 4 klausima: ");
+        String examQuestions4 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 4 atsakima: ");
+        String examAnswers4 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 5 klausima: ");
+        String examQuestions5 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 5 atsakima: ");
+        String examAnswers5 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 6 klausima: ");
+        String examQuestions6 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 6 atsakima: ");
+        String examAnswers6 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 7 klausima: ");
+        String examQuestions7 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 7 atsakima: ");
+        String examAnswers7 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 8 klausima: ");
+        String examQuestions8 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 8 atsakima: ");
+        String examAnswers8 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 9 klausima: ");
+        String examQuestions9 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 9 atsakima: ");
+        String examAnswers9 = scanner.nextLine();
+        System.out.println("Iveskite egzamino 10 klausima: ");
+        String examQuestions10 = scanner.nextLine();
+        System.out.println("Iveskite klausimo 10 atsakima: ");
+        String examAnswers10 = scanner.nextLine();
     }
 
     private void lecturerMenu() {

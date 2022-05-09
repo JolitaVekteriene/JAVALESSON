@@ -24,7 +24,6 @@ public class AnswersMain {
                 new Answer("9.", "b"),
                 new Answer("10.", "a")));
 
-
         Student student2 = new Student("777", "456", List.of(
                 new Answer("1.", "b"),
                 new Answer("2.", "b"),

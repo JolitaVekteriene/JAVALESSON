@@ -36,15 +36,15 @@ public class StudentMain {
     }
 
     private void addTest(Scanner scanner) {
-        System.out.println("Koki testa noresite laikyti? Iveskite testo pavadinima");
+        System.out.println("Koki testa noresite laikyti? Iveskite testo id");
+        String Test = scanner.nextLine();
     }
 
     private void studentMenu() {
         System.out.println("""
                 [1]. ivesti studento duomenis
                 [2]. laikyti testa
-      //          [3]. testo klausimai
-                [4]. iseiti
+                [3]. iseiti
                 """);
     }
 }

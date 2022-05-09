@@ -4,18 +4,18 @@ import service.LoginService;
 
 import java.util.Scanner;
 
-public class Main {
+public class LoginMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Main main = new Main();
+        LoginMain main = new LoginMain();
         main.selectAction(scanner);
     }
 
     private void menu() {
         System.out.println("""
-                [1]. registracija
-                [2]. login
-                [3]. exit
+                [1]. registruotis
+                [2]. prisijungti
+                [3]. iseiti
                 """);
     }
 
@@ -29,9 +29,8 @@ public class Main {
                 case "1" -> service.userRegistration(scanner);
                 case "2" -> service.login(scanner);
                 case "3" -> System.out.println("Viso gero:");
-                default -> System.out.println("Tokio veiksmo nera");
+                default -> System.out.println("Iveskite vartotojo varda");
             }
-        }while (!action.equals("3"));
-
+        } while (!action.equals("3"));
     }
 }
